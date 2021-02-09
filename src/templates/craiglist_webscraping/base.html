@@ -1,12 +1,30 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Craglist Webscrapping</title>
+    {% comment %} Materialize styles {% endcomment %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    {% comment %} Project's own styles {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <title>{% block head_title %}Craglist Webscrapping{% endblock head_title %}</title>
 </head>
 <body>
+    <nav>
+        <div class="container nav-wrapper">
+            <a href="/" class="brand-logo">Craiglist Webscraping</a>
+            <ul id="nav-mobile" class="right">
+                <li><a href="/">home</a></li>
+            </ul>
+        </div>
+    </nav>
     <h2>Testing if it's working</h2>
 </body>
+{% comment %} Materialize scripts {% endcomment %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+{% block scripts %}{% endblock scripts %}
 </html>
