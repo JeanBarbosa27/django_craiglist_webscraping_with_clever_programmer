@@ -7,3 +7,19 @@
     height: 250px; /* Your height here */
     overflow: hidden;
 }
+
+.text-center {
+    text-align: center;
+}
+
+.text-primary-color {
+    color: #ee6e73;
+}
+
+.text-orange-color {
+    color: orange;
+}
+
+.text-blue-color {
+    color: blue;
+}
